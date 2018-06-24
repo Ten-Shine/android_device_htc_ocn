@@ -699,10 +699,6 @@ on post-fs-data
     mkdir /data/wifi_log 0777 wifi wifi
     # HTC_WIFI_END
 
-    #create port-bridge log dir
-    mkdir /data/vendor/port_bridge 0770 radio radio
-    chmod 0770 /data/vendor/port_bridge
-
     #create netmgr log dir
     mkdir /data/vendor/netmgr 0770 radio radio
     chmod 0770 /data/vendor/netmgr
@@ -1077,14 +1073,6 @@ service ftmd /system/bin/logwrapper /system/bin/ftmdaemon
     group bluetooth net_bt_admin misc diag net_bt
     disabled
     oneshot
-
-service vendor.port-bridge /vendor/bin/port-bridge
-    class main
-    user radio
-    group radio system inet
-    disabled
-    oneshot
-    writepid /dev/cpuset/system-background/tasks
 
 service qmiproxy /system/bin/qmiproxy
     class main

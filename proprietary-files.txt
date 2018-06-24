@@ -1025,7 +1025,6 @@ framework/QtiTelephonyServicelibrary.jar:vendor/framework/QtiTelephonyServicelib
 -app/QtiTelephonyService/QtiTelephonyService.apk:vendor/app/QtiTelephonyService/QtiTelephonyService.apk|8e205bf2abb8d17f679cce354c6e849ec91b7563
 vendor/lib64/libsettings.so|fe6a5e08a97825c93224a39ad23386c79dba68f8
 vendor/bin/netmgrd
-vendor/bin/port-bridge
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
