@@ -244,6 +244,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/ocn/releasetools
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+TARGET_USES_OLD_MNC_FORMAT := true
 CUSTOM_APNS_FILE := $(DEVICE_PATH)/configs/apns-conf.xml
 
 # Security patch level
