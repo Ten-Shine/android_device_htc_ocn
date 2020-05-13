@@ -18,6 +18,8 @@ BOARD_VENDOR := htc
 
 DEVICE_PATH := device/htc/ocn
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
