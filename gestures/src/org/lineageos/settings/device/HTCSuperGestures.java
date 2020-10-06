@@ -67,9 +67,6 @@ import java.util.Iterator;
 import java.lang.Runtime;
 import java.io.IOException;
 
-import lineageos.providers.LineageSettings;
-import org.lineageos.internal.util.FileUtils;
-
 import java.util.List;
 
 public abstract class HTCSuperGestures extends Service {
