@@ -51,6 +51,10 @@ TARGET_SCREEN_WIDTH := 1440
 # Force building a boot image. This needs to be set explicitly since Android R
 PRODUCT_BUILD_BOOT_IMAGE := true
 
+# Android R: Disable logic for new vendor_boot
+# Our devices do not support it
+PRODUCT_BUILD_VENDOR_BOOT_IMAGE := false
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
