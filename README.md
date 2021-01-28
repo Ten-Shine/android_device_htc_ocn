@@ -25,3 +25,14 @@ Copyright 2017 - The LineageOS Project
 
 ![HTC u11](http://cdn2.gsmarena.com/vv/pics/htc/htc-u11-1.jpg "HTC u11")
 
+Git Clone
+===========================================
+More convenient to git clone
+
+Thanks [tomascus](https://github.com/tomascus/)  Thanks [Golv](https://github.com/Golv) ...
+
+> git clone https://github.com/Ten-Shine/android_device_htc_ocn.git -b dot-11 device/htc/ocn --depth=1
+
+> git clone https://github.com/Golv/android_kernel_htc_msm8998.git -b lineage-18.1 kernel/htc/msm8998 --depth=1
+
+> git clone https://github.com/Golv/proprietary_vendor_htc.git -b lineage-18.1 vendor/htc --depth=1
