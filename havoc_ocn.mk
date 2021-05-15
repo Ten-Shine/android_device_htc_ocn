@@ -18,14 +18,14 @@
 PRODUCT_RELEASE_NAME := ocn
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/ocn/full_ocn.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ocn
-PRODUCT_NAME := lineage_ocn
+PRODUCT_NAME := havoc_ocn
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := HTC U11
 PRODUCT_MANUFACTURER := HTC
@@ -33,5 +33,8 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=ocnuhl_00710 \
         PRIVATE_BUILD_DESC="ocnuhl_00710-user 8.0.0 OPR6.170623.013/1002308.9 release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.havoc.maintainer=Ten-Shine
 
 BUILD_FINGERPRINT := htc/ocnuhl_00710/htc_ocnuhl:8.0.0/OPR6.170623.013/1002308.9:user/release-keys
