@@ -30,6 +30,15 @@ PRODUCT_BRAND := HTC
 PRODUCT_MODEL := HTC U11
 PRODUCT_MANUFACTURER := HTC
 
+# Face Unlock
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+PRODUCT_COPY_FILES += \
+    vendor/apps/FaceUnlock/prebuilt/product/etc/default-permissions/facesense-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/facesense-default-permissions.xml
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.sense_service=true
+TARGET_FACE_UNLOCK := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=ocnuhl_00710 \
         PRIVATE_BUILD_DESC="ocnuhl_00710-user 8.0.0 OPR6.170623.013/1002308.9 release-keys"
