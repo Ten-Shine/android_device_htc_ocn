@@ -36,11 +36,11 @@
 
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 107. -->
-    <integer name="config_deviceLightCapabilities">107</integer>
+    <integer name="config_deviceLightCapabilities">235</integer>
 
     <!-- Color temperature settings for LiveDisplay. These were obtained by
          measuring the display at various color balance levels. -->
-    <integer name="config_minColorTemperature">2500</integer>
+    <integer name="config_minColorTemperature">1500</integer>
     <integer name="config_maxColorTemperature">25000</integer>
 
     <!-- Corresponds to color balance level of zero, this is the native
@@ -48,8 +48,8 @@
     <integer name="config_dayColorTemperature">8000</integer>
     <integer name="config_nightColorTemperature">4000</integer>
 
-    <!-- For high brightness mode 
-    <integer name="config_outdoorAmbientLux">20000</integer>-->
+    <!-- For high brightness mode -->
+    <integer name="config_outdoorAmbientLux">20000</integer>
 
     <!-- Disable this by default, since it's actually using the QC FOSS algorithm for
          OLED displays and can cause a bit of discoloration. Reinvestigate after tuning -->
@@ -104,7 +104,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">64</integer>
+    <integer name="config_deviceHardwareWakeKeys">65</integer>
 
     <!-- Button backlight control. Possible values are:
             0 - Not supported
@@ -119,5 +119,21 @@
 
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
+    
+    <!-- Control the behavior when the user long presses the back button.
+            0 - Nothing
+            1 - Menu key
+            2 - Recent apps view in SystemUI
+            3 - Launch assist intent
+            4 - Voice Search
+            5 - In-app Search
+            6 - Launch camera
+            7 - Sleep
+            8 - Last app
+            9 - Toggle split screen
+            10 - Close app
+         This needs to match the enums in
+         sdk/src/java/org/lineageos/internal/util/DeviceKeysConstants.java.-->
+    <integer name="config_longPressOnBackBehavior">0</integer>
 
 </resources>
