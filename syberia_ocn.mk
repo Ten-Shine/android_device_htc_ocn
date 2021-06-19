@@ -18,17 +18,19 @@
 PRODUCT_RELEASE_NAME := ocn
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/ocn/full_ocn.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ocn
-PRODUCT_NAME := lineage_ocn
+PRODUCT_NAME := syberia_ocn
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := HTC U11
 PRODUCT_MANUFACTURER := HTC
+
+TARGET_BOOT_ANIMATION_RES := 1440
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=ocnuhl_00710 \
