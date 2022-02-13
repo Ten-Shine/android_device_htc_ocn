@@ -130,6 +130,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=640 \
     vendor.display.disable_rotator_downscale=1 \
     vendor.display.disable_partial_split=1 \
+    vendor.display.disable_scaler=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1 \
     vendor.display.disable_skip_validate=1 \
