@@ -965,11 +965,10 @@ vendor/firmware/libpn553_fw.so
 # Perf - energy awareness
 vendor/bin/energy-awareness
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Peripheral manager - from jasmine V11.0.15.0.QDIMIXM
+vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
+vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
+vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
 # Power
 vendor/etc/powerhint.xml|c23d3a9d8d2ba3b1bbd09c272d75c7143ba17cd0
