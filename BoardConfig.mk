@@ -206,6 +206,7 @@ TARGET_KERNEL_SOURCE := kernel/htc/msm8998
 TARGET_KERNEL_CONFIG := lineage_ocn_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
