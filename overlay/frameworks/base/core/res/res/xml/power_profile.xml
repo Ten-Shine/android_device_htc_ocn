@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
     <item name="none">0</item>
-    <item name="screen.on">105.42</item>
-    <item name="screen.full">388.89</item>
+    <item name="screen.on.display0">105.42</item>
+    <item name="screen.full.display0">388.89</item>
     <array name="screen.brightness">
         <value>dark</value>
         <value>dim</value>
