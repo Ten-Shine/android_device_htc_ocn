@@ -725,8 +725,10 @@ vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
+vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
+vendor/etc/init/vendor.qti.gnss@1.0-service.rc
 vendor/lib64/libalarmservice_jni.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libdrplugin_client.so
